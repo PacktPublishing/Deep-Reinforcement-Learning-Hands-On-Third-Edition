@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import ale_py
 import gymnasium as gym
 from lib import dqn_model
 from lib import wrappers
