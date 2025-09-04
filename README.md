@@ -85,6 +85,22 @@ If you want to learn about RL using a practical approach using OpenAI  Gym and P
 </ul>
 
   </details>
+  
+<details>
+ <summary><h2>Errata </h2></summary>
+
+ <ul>
+    <li>Page 279 (5th Bullet point):</li>
+    
+    
+ **conv_1d** _Should be_ **state_1d**
+    
+
+  <li>Page 280 (Figure 10.2):</li>
+  
+  **conv_1d** _Should be_ **state_1d**
+
+</details>
 
 <details open> 
   <summary><h2>Chapters</summary>
