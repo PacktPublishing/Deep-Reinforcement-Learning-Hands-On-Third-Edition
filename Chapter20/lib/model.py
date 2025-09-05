@@ -85,8 +85,8 @@ class Net(nn.Module):
         v = v + self.conv_3(v)
         v = v + self.conv_4(v)
         v = v + self.conv_5(v)
-        val = self.conv_val(v)
-        pol = self.conv_policy(v)
+        val = self.value(self.conv_val(v))
+        pol = self.policy(self.conv_policy(v))
         return pol, val
 
 
