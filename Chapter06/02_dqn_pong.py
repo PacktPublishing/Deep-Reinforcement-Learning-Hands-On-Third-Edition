@@ -73,7 +73,7 @@ class Agent:
         self._reset()
 
     def _reset(self):
-        self.state, _ = env.reset()
+        self.state, _ = self.env.reset()
         self.total_reward = 0.0
 
     @torch.no_grad()
@@ -82,7 +82,7 @@ class Agent:
         done_reward = None
 
         if np.random.random() < epsilon:
-            action = env.action_space.sample()
+            action = self.env.action_space.sample()
         else:
             state_v = torch.as_tensor(self.state).to(device)
             state_v.unsqueeze_(0)
